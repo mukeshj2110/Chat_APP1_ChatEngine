@@ -23,8 +23,8 @@ const ChatFeed =(props)=>{
                     <div className="message-block">
                         {
                             isMyMessage?
-                            <MyMessage />:
-                            <TheirMessage />
+                            <MyMessage  message={message}/>:
+                            <TheirMessage message={message} lastMessageKey={lastMessageKey}/>
 
                         }
                     </div>
