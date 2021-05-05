@@ -16,7 +16,7 @@ const ChatFeed =(props)=>{
                 key={`read_${index}`}
                 className="read-receipt"
                 style={{
-                    float: isMyMessage? 'right': 'left',
+                    float: isMyMessage? 'left': 'right',
                     backgroundImage: `url(${person?.person?.avatar})`
                 }}
             />
@@ -58,7 +58,7 @@ const ChatFeed =(props)=>{
     if(!chat) return 'Loading......';
     return (
         <div className="chat-feed">
-            <div className="chat-title-conatiner">
+            <div className="chat-title-container">
                 <div className="chat-title">
                     {chat.title}
                 </div>
