@@ -9,6 +9,11 @@ const ChatFeed =(props)=>{
 
     const chat = chats && chats[activeChat];
     console.log(chat,userName,messages);
+    const handleSignout =()=>{
+        localStorage.setItem("username" , '');
+        localStorage.setItem("password" , '');
+        window.location.reload();
+    }
 
     const renderReadReceipts =(message , isMyMessage)=>{
        return chat.people.map((person,index)=> person.last_read === message.id &&(
@@ -58,6 +63,7 @@ const ChatFeed =(props)=>{
     if(!chat) return 'Loading......';
     return (
         <div className="chat-feed">
+            <button className="signout" onClick={handleSignout}><i class="fas fa-sign-out-alt"></i></button>
             <div className="chat-title-container">
                 <div className="chat-title">
                     {chat.title}
@@ -74,6 +80,8 @@ const ChatFeed =(props)=>{
                     <MessageForm {...props} chatId={activeChat} />
             </div>
         </div>
+
+        
     );
 
    

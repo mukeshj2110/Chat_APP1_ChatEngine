@@ -29,12 +29,12 @@
   
   .ce-text-input {
     border-radius: 6px !important;
-    border: 1px solid #3b2a50 !important;
+    border: 1px solid #324e85 !important;
   }
   
   .ce-primary-button {
     border-radius: 6px !important;
-    background-color: #7554a0 !important;
+    background-color: #222cf7 !important;
     position: relative;
     bottom: 1px;
   }
@@ -55,7 +55,7 @@
   
   .ce-autocomplete-options {
     border-radius: 6px !important;
-    border: 1px solid #3b2a50 !important;
+    border: 1px solid #445ae4 !important;
     background-color: white !important;
   }
   
@@ -68,6 +68,15 @@
   }
   
   /* CUSTOM FEED */
+
+  .signout{
+    float: right;
+    margin: 0.5rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+  }
   
   .chat-feed {
     height: 100%;
@@ -83,7 +92,7 @@
   }
   
   .chat-title {
-    color: #7554a0;
+    color: #f02289;
     font-weight: 800;
     font-size: 24px;
     text-align: center;
@@ -165,7 +174,7 @@
   .message-form {
     overflow: hidden;
     border-radius: 6px;
-    border: 1px solid #3b2a50;
+    border: 1px solid #1241ee;
     background-color: white;
   }
   
@@ -219,7 +228,7 @@
     height: 100vh;
       width: 100%;
     background: rgb(117,84,160);
-    background: linear-gradient(90deg, rgb(33, 201, 53) 7%, rgb(97, 148, 211) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
+    background: linear-gradient(to top right, rgb(250, 41, 4) 7%, rgb(211, 190, 97) 17%, rgb(112, 164, 71) 29%, rgb(41, 191, 181) 44%, rgb(41, 59, 175) 66%, rgb(116, 28, 211) 83%, rgb(214, 11, 228) 96%, rgb(179, 26, 164) 100%, rgba(0,212,255,1) 100%);  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,3 +298,6 @@
     opacity: 1;
     right: 0;
   }
+
+
+  
