@@ -50,7 +50,7 @@ const LoginForm =()=>{
                         </button>
                     </div>
                     <h3>username: user1 or user2 or user3</h3>
-                    <h3> Password: 123 for all</h3>
+                    <h3> Password: 123 for all three users</h3>
                     <h2 className="error">{error}</h2>
                 </form>
             </div>
